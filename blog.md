@@ -5,11 +5,14 @@ comments: false
 ---
 
 
-## Ingångssida för bloggen, inläggen visas till höger. Välj ett och läs.
-
-aaaaa a a a a a 
-aaa a a a a a a
+### Frontpage for the Blog.
 
 
+Blogposts can be found in the menu to the right.  
 
-aaaa a a a
+
+Feel free to read and leave a comment!
+
+
+
+
