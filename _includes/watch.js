@@ -2,6 +2,7 @@
 
 
 <script>
+
 setInterval(function() {
     var seconds = new Date().getSeconds();
     var sdegree = seconds * 6 + 270;
@@ -29,11 +30,8 @@ setInterval(function() {
     hoursSel.innerHTML = hours;
 }, 1000);
 
-var btnSel = document.querySelector('.btn');
-var header = document.getElementsByTagName('header')[0];
 
-btnSel.addEventListener("click", function() {
-    header.scrollIntoView();
-}, false);
+
+
 
 </script>
