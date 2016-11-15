@@ -1,4 +1,4 @@
-### Clean Theme
+### Jekyll Clean Theme has been the foundation for this site.
 
-![Alt text](screen.png)
+![Alt text](panic.jpg)
 

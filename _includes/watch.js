@@ -1,27 +1,26 @@
-
-
-
-<script>
+/**
+ * Source: Major part is from a jekyll theme called "Clean".
+ */
 
 setInterval(function() {
-    var seconds = new Date().getSeconds();
-    var sdegree = seconds * 6 + 270;
+    let seconds = new Date().getSeconds();
+    let sdegree = seconds * 6 + 270;
     seconds = ("0" + seconds).slice(-2);
-    var secondSel = document.querySelector(".seconds");
+    let secondSel = document.querySelector(".seconds");
 
     secondSel.style.transform = "rotate(" + sdegree + "deg) translate(160px) rotate(-" + sdegree + "deg)";
     secondSel.innerHTML = seconds;
 
-    var minutes = new Date().getMinutes();
-    var mdegree = minutes * 6 + 270;
-    var minutesSel = document.querySelector(".minutes");
+    let minutes = new Date().getMinutes();
+    let mdegree = minutes * 6 + 270;
+    let minutesSel = document.querySelector(".minutes");
     minutes = ("0" + minutes).slice(-2);
 
     minutesSel.style.transform = "rotate(" + mdegree + "deg) translate(181px) rotate(-" + mdegree + "deg)";
     minutesSel.innerHTML =  minutes;
 
-    var hours = new Date().getHours();
-    var hoursSel = document.querySelector(".hours");
+    let hours = new Date().getHours();
+    let hoursSel = document.querySelector(".hours");
 
 
 
@@ -34,4 +33,4 @@ setInterval(function() {
 
 
 
-</script>
+
