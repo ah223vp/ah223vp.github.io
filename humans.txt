@@ -1,0 +1,15 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  ah223vp: Andreas Hedin
+  Site:
+  Twitter: @Andreas28960124
+  Location: Sweden
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Jekyll, Javascript
+  Software: Webstorm (IDE), vagrant (VM)
