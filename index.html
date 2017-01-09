@@ -1,16 +1,148 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desktop</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/Window.css"/>
+    <link rel="stylesheet" href="./css/mapGame.css"/>
 
-<div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-            <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-          </a>
-      </li>
-    {% endfor %}
-  </ul>
+</head>
+<body>
+<div class="main">
+    <div id="desktop">
+
+    </div>
+    <div id="startMenu" class="startMenu">
+        <button id="createMemory" class="menuIcon"><img class="imgIcon" src="image/memory.png" alt="memory Icon"></button>
+        <button id="createChat" class="menuIcon"><img class="imgIcon" src="image/chat.png" alt="chat Icon"></button>
+        <button id="createGeoguessr" class="menuIcon"><img class="imgIcon" src="image/geoguessr.png" alt="Test"></button>
+    </div>
 </div>
+
+<template id="mapTemplate">
+    <div id="mapContainer"></div>
+    <div id="streetView"></div>
+    <div class="mapSubmit">
+        <div id="showResultMapGame">
+            <div id="showResultMapGameText">
+                What is the question to life universe and everything?
+            </div>
+        </div>
+        <button id="guess">Guess!</button>
+        <button id="newMapPicButton" class="hide">New Challenge!</button>
+        <div id="explanationMapGame"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span id="exHeadline">Welcome!</span> <br>
+        So you wanna play a GeoGuesser copy, great! <br>
+        Click the map where you think the picture was taken. <br>
+        Then click the Guess! button to see the result. <br>
+        On some pictures you can walk around to gain some clues. <br>
+            This is fine, just remember that I wan´t to know where the picture was taken. Incase you wonder very far.
+            <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Much fun!</div>
+    </div>
+</template>
+<template id="test">
+    <div id="container" class="container">
+        <div class="menu draggable">
+            <div id="topMenu" class="draggable" >
+                <img class="topMenu topMenuIcon">
+                <p class="topMenu topMenuText"></p>
+                <button class="minimizeButton menuButton topMenu">_</button>
+                <button class="close menuButton topMenu">X</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn menuButton">Settings</button>
+            </div>
+        </div>
+        <div class="innerContainer"></div>
+    </div>
+</template>
+
+<template id="innerMemory">
+    <div id="imgContainer" class="twoByFour">
+        <img class="memoryCard" tabindex="0">
+        <br>
+        <div id="drawsCount">aaaa</div>
+    </div>
+</template>
+
+<template id="menuLinks">
+    <div id="myDropdown" class="dropdown-content">
+        <a>Link 1</a>
+    </div>
+</template>
+<template id="chatWindowMain">
+    <div id = "chatWindow">
+    </div>
+    <div id="send">
+        <input id="textInputBox" type="text" name="Meddelande">
+        <button>Send</button>
+    </div>
+</template>
+<template id="createChatWindow">
+        <div>
+            <div class="userName"></div>
+            <div class="messageText"></div>
+        </div>
+</template>
+
+<template id="promptBox">
+    <div>
+        <div class="promptText"></div>
+        <div class="promptText"></div>
+        <div class="bottom">
+            <input class="promptInput" type="text">
+            <button id="promptButton">Ok</button>
+        </div>
+    </div>
+</template>
+<template id="video">
+    <div id="videoContainer">
+        <video id="remoteFeed" src=""></video>
+        <video id="localFeed" src=""></video>
+        <div id="users">
+        </div>
+
+        <div>
+            <button id="callButton">Call</button>
+            <button id="endCall">End</button>
+            <button id="answerCall">Answer</button>
+        </div>
+    </div>
+</template>
+<template id="listTemplate">
+    <ul id="list">
+        <li></li>
+    </ul>
+</template>
+<template id="canvasTemplate">
+    <canvas id="canvasDUP" width="640" height="480"></canvas>
+</template>
+<template id="minimize">
+    <div id="minimizeHead" class="minimize">
+        <div id="listContent" class="miniMizedListContent">
+        <a class="aItems"></a>
+        </div>
+    </div>
+</template>
+<template id="infoBoxTemplate">
+    <div id="resultBox" class="infoBoxOnMap">
+        <div>
+          <h3>Well done!</h3> <br>
+            You were : <span id="distance"></span><span>km</span>
+        </div>
+        <div>
+            away from the point.
+        </div>
+    </div>
+</template>
+<template id="A">
+    <a></a>
+</template>
+
+<script src="js/dist.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC01mZhrkmBVmHbJcyJVL2aPcHa1o3r41c&"></script>
+
+</body>
+</html>

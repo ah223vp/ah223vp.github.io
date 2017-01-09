@@ -1,17 +1,13 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+/* AUTHOR */
+    name: Andreas Hedin
+    contact: ah223vp@student.lnu.se
+    From: Sweden
 
+/* THANKS *
+    Pro Symbols from Noun Project (Chat icon)
+    AFY Studio from Noun Project (Geoguessr icon)
+    romzicon from Noun Project (mapAnswer icon)
+    Ker'is from Noun Project (mapGuess icon)
+    Aaron K Kim from Noun Project (Memory icon)
 
-/* TEAM */
-  ah223vp: Andreas Hedin
-  Site:
-  Twitter: @Andreas28960124
-  Location: Sweden
-
-/* THANKS */
-  url: http://knaman2609.github.io/clean/
-
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: Jekyll, Javascript
-  Software: Webstorm (IDE), vagrant (VM)
+    Contrubution according to https://creativecommons.org/licenses/by/3.0/#
